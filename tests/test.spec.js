@@ -1,3 +1,12 @@
+/**
+ * Credit to Patrick Arlt for their gist that helped with the development of
+ * this file:
+ * https://gist.github.com/patrickarlt/931b129598703eed4dda
+ *
+ * Modified to exclude the use of `babel-node` and import external
+ * configuration.
+ */
+
 const webdriverio = require('webdriverio');
 const test = require('tape');
 const conf = require('./conf');
