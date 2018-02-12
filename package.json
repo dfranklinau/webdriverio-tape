@@ -1,0 +1,15 @@
+{
+  "name": "webdriverio-tape",
+  "private": true,
+  "author": "Daniel Franklin <git@danielfranklin.id.au>",
+  "scripts": {
+    "tests": "tape tests/**/*.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "webdriverio": "4.10.2"
+  },
+  "dependencies": {
+    "tape": "4.8.0"
+  }
+}
