@@ -1,6 +1,6 @@
-# webdriver.io + tape
+# WebdriverIO + tape
 
-This repository demonstrates how to use [webdriver.io](http://webdriver.io) with
+This repository demonstrates how to use [WebdriverIO](http://webdriver.io) with
 the [tape](https://github.com/substack/tape/) test framework.
 
 It includes a test file (`tests/test.spec.js`) that:
