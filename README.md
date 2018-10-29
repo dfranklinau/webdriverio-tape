@@ -5,9 +5,9 @@ the [tape](https://github.com/substack/tape/) test framework.
 
 It includes a test file (`tests/test.spec.js`) that:
 
-1. Opens the Firefox browser (as defined in `tests/conf.js`);
-1. Visits the url `https://duckduckgo.com`; and
-1. Tests the title of the page to be equal to `DuckDuckGo`.
+1. opens the Firefox browser (as defined in `tests/conf.js`);
+1. visits the url `https://duckduckgo.com`; and
+1. tests the title of the page to be equal to `DuckDuckGo`.
 
 
 
@@ -26,10 +26,8 @@ It includes a test file (`tests/test.spec.js`) that:
 ## Installation
 
 ```
-yarn install
+npm install
 ```
-
-(`yarn` can be substituted with `npm`.)
 
 
 
@@ -43,13 +41,13 @@ Start the Selenium server:
 selenium-standalone start
 ```
 
-Then run the tests in a separate window:
+Run the tests:
 
 ```
-yarn run tests
+npm run tests
 ```
 
-The expected output should be similar to below:
+The result should be something similar to the below output:
 
 ```
 TAP version 13
