@@ -25,7 +25,7 @@ test('should visit DuckDuckGo', t => {
     .init()
     .url('https://duckduckgo.com')
     .getTitle().then(function (title) {
-      t.equal(title, 'DuckDuckGo');
+      t.equal(title, 'DuckDuckGo — Privacy, simplified.');
     })
     .end();
 
