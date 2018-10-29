@@ -3,7 +3,7 @@
   "private": true,
   "author": "Daniel Franklin <git@danielfranklin.id.au>",
   "scripts": {
-    "tests": "tape tests/**/*.js"
+    "test": "tape tests/**/*.js"
   },
   "license": "ISC",
   "devDependencies": {

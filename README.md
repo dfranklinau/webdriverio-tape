@@ -6,8 +6,8 @@ the [tape](https://github.com/substack/tape/) test framework.
 It includes a test file (`tests/test.spec.js`) that:
 
 1. opens the Firefox browser (as defined in `tests/conf.js`);
-1. visits the url `https://duckduckgo.com`; and
-1. tests the title of the page to be equal to `DuckDuckGo`.
+2. visits the URL `https://duckduckgo.com`; and
+3. tests the title of the page to match an expected value.
 
 
 
@@ -15,9 +15,8 @@ It includes a test file (`tests/test.spec.js`) that:
 
 ## Requirements
 
-* [selenium-standalone](https://github.com/vvo/selenium-standalone/) (installed
-  globally); and
-* Java 8 or higher.
+* Docker with `selenium-standalone` installed; see
+  [here](https://github.com/vvo/selenium-standalone).
 
 
 
@@ -35,16 +34,16 @@ npm install
 
 ## Getting started
 
-Start the Selenium server:
+Run the Docker service containing the Selenium server that will run all tests.
 
 ```
-selenium-standalone start
+docker run -it -p 4444:4444 vvoyer/selenium-standalone
 ```
 
-Run the tests:
+Run the example test:
 
 ```
-npm run tests
+npm test
 ```
 
 The result should be something similar to the below output:
@@ -60,6 +59,10 @@ ok 1 should be equal
 
 # ok
 ```
+
+The example test checks the `<title>` tag of
+[DuckDuckGo](https://duckduckgo.com/). If the test fails, it is because the
+title has changed (the output should indicate this).
 
 
 
